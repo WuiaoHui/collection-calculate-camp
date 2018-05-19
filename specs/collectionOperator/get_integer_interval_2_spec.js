@@ -1,9 +1,8 @@
 'use strict';
 
-var get_integer_interval_2 = require('../../practices/collectionOperator/get_integer_interval_2.js');
-
 describe('get_integer_interval_2', function () {
 
+  var get_integer_interval_2 = require('../../practices/collectionOperator/get_integer_interval_2.js');
   var collection_a = [2, 4, 6, 8, 10];
   var collection_b = [10, 8, 6, 4, 2];
 
@@ -28,7 +27,6 @@ describe('get_integer_interval_2', function () {
   it('给定两个相同的偶数得到只含此数字的数组', function() {
 
     var result = get_integer_interval_2(5, 5);
-    expect(result).toEqual([]);
+    expect(result).toEqual([4]);
   });
 });
-
